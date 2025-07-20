@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  margin: 20px 0;
+  margin: 10px 0;
   color: #3176ba;
 }
 
@@ -16,7 +16,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: 10px auto;
   gap: 10px;
 }
 
@@ -54,11 +54,12 @@ h1 {
 
 #map {
   height: 500px;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 22px auto;
   border: 1px solid #dddcdc;
   border-radius: 10px;
+  position:relative;
 } 
 
 /* Responsive */
