@@ -8,48 +8,73 @@ body {
 
 h1 {
   margin: 20px 0;
-  color: #2c3e50;
+  color: #3176ba;
 }
 
-.controls {
-  margin-bottom: 10px;
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
 }
 
-#searchBox {
-  padding: 10px;
-  width: 250px;
+#searchbar {
+  padding: 12px 16px;
   font-size: 16px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: #3498db;
-  color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 50px;
+  width: 300px;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
 }
 
-button:hover {
-  background-color: #2980b9;
+#searchbar:focus {
+  box-shadow: 0 4px 8px rgba(141, 143, 145, 0.5);
 }
+
+.search-container button {
+  padding: 12px 24px;
+  background-color: #0060c7;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #0073ef;
+}
+
 
 #map {
   height: 500px;
   width: 90%;
   max-width: 1000px;
-  margin: 20px auto;
-  border: 2px solid #ccc;
+  margin: 22px auto;
+  border: 1px solid #dddcdc;
   border-radius: 10px;
-}
+} 
 
 /* Responsive */
 @media (max-width: 600px) {
-  #searchBox {
-    width: 70%;
+     .search-container {
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+  }
+
+  #searchbar {
+    width: 90%;
+  }
+
+  .search-container button {
+    width: 90%;
   }
 
   #map {
